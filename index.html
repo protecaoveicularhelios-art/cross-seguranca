@@ -294,7 +294,10 @@
     .diff-grid{ grid-template-columns:1fr; }
     .icon-grid{ grid-template-columns:1fr; }
     .feature-list{ grid-template-columns:1fr; }
-    .sedes-grid{ grid-template-columns:1fr; }
+    .sedes-grid{ display:flex; grid-template-columns:unset; overflow-x:auto; scroll-snap-type:x mandatory;
+      gap:14px; margin-inline:-20px; padding:0 20px 8px; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+    .sedes-grid::-webkit-scrollbar{ display:none; }
+    .sedes-grid video{ flex:0 0 82%; scroll-snap-align:center; height:320px; }
     .mg-map-grid{ grid-template-columns:1fr; }
     .foot-row{ flex-direction:column; align-items:flex-start; }
     .form-row{ grid-template-columns:1fr; }
